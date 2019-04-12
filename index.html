@@ -5,99 +5,10 @@
     <title>Poem Format Picker</title> 
 </head>
  <body>
-    <p align="center"> 
-      <canvas id="mycanvas"></canvas> 
-    </p>
+   
+    
  </body>
 
- <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
- 
- <script>
-    var sketchProc = function(processingInstance) {
-     with (processingInstance) {
-        size(600, 600); 
-        frameRate(60);
-        var a = "Quatrain";
-var b = "Sonnet";
-var c = "Haiku";
-var d = "Cacophony";
-var e = "Pantoum";
-var f = "Terza Rima";
-var g = "Sestina";
-var h = "Elegy";
-var i = "Ghazal";
-var j = "Ode";
-var k = "Prose Poem";
-var l = "Tercet";
-var m = "Villanelle";
-var n = "Free Verse";
-var o;
-var p = "";
 
-
-
-
-    if(floor(o) === 0){
-        p = a;
-    }
-    if(floor(o) === 1){
-        p = b;
-    }
-    if(floor(o) === 2){
-        p = c;
-    }
-    if(floor(o) === 3){
-        p = d;
-    }
-    if(floor(o) === 4){
-        p = e;
-    }
-    if(floor(o) === 5){
-        p = f;
-    }
-    if(floor(o) === 6){
-        p = g;
-    }
-    if(floor(o) === 7){
-        p = h;
-    }
-    if(floor(o) === 8){
-        p = i;
-    }
-    if(floor(o) === 9){
-        p = j;
-    }
-    if(floor(o) === 10){
-        p = k;
-    }
-    if(floor(o) === 11){
-        p = l;
-    }
-    if(floor(o) === 12){
-        p = m;
-    }
-    if(floor(o) === 13){
-        p = n;
-    }
-    if(p === 600){
-        o = random(0, 13);
-    }
-draw = function() {
-background(0, 0, 0);
-    fill(255, 0, 0);
-    textSize(60);
-    text(p, width/2-130, height/2);
-    if(mousePressed){
-        o = random(0, 13);
-        Program.restart();
-    }
-};
-
-    }};
-
-    var canvas = document.getElementById("mycanvas"); 
-
-    var processingInstance = new Processing(canvas, sketchProc); 
- </script>
 
 </html>
