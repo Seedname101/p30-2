@@ -32,7 +32,15 @@
       color: red;
       }
        #poem{
-       text-align: center;
+         background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
        }
     </style>
 </head>
@@ -41,56 +49,16 @@
     <div id = "container">
     <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
     </div>
-  <p id="poem" onclick="myFunction()">
-   <canvas id="mycanvas"></canvas>
+  <p id="poem" onclick="myFunction()"><a href="https://seedname101.github.io/p30/" class="button">Click Here To Select Poetry Format(4/13/19) </a>
+    </div></canvas>
   </p>
-  
-   <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js">
- 
- <script>
-    var sketchProc = function(processingInstance) {
-     with (processingInstance) {
-        size(600, 200); 
-        frameRate(60);
-    }};
-var a = "Quatrain";
-var b = "Sonnet";
-var c = "Haiku";
-var d = "Cacophony";
-var e = "Pantoum";
-var f = "Sestina";
-var g = "Elegy";
-var h = "Ode";
-var i = "Ghazal";
-var j = "Terza Rima";
-var k = "Prose Poem";
-var l = "Tercet";
-var m = "Villanelle";
-var n = "Free Verse";
-background(0, 0, 0);
-fill(255, 0, 0);
-    textSize(60);
-text("Click Me!", width/2-130, height/2);
-draw = function() {
-  mousePressed = function(){
-    background(0, 0, 0);
-    fill(255, 0, 0);
-    textSize(60);
-    text("Pantoum", width/2-130, height/2);
-};
-};
-
-    var canvas = document.getElementById("mycanvas"); 
-
-    var processingInstance = new Processing(canvas, sketchProc); 
- </script>
-  </script>
   
   <script text = "javascript">
   document.getElementById("poem").addEventListener("click", myFunction);
 
 function myFunction() {
   document.getElementById("title").innerHTML = "Pantoum";
+ document.getElementById("peom").innerHTML = "Poem Format For Saturday: Pantoum";
 }
   </script>
   
