@@ -60,9 +60,35 @@ function myFunction() {
  <script>
     var sketchProc = function(processingInstance) {
      with (processingInstance) {
-        size(400, 400); 
+        size(600, 200); 
         frameRate(60);
     }};
+var a = "Quatrain";
+var b = "Sonnet";
+var c = "Haiku";
+var d = "Cacophony";
+var e = "Pantoum";
+var f = "Sestina";
+var g = "Elegy";
+var h = "Ode";
+var i = "Ghazal";
+var j = "Terza Rima";
+var k = "Prose Poem";
+var l = "Tercet";
+var m = "Villanelle";
+var n = "Free Verse";
+background(0, 0, 0);
+fill(255, 0, 0);
+    textSize(60);
+text("Click Me!", width/2-130, height/2);
+draw = function() {
+  mousePressed = function(){
+    background(0, 0, 0);
+    fill(255, 0, 0);
+    textSize(60);
+    text("Pantoum", width/2-130, height/2);
+};
+};
 
     var canvas = document.getElementById("mycanvas"); 
 
