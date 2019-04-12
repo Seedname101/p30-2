@@ -4,6 +4,10 @@
  <head>
     <title>Poem Format Picker</title> 
       <style>
+       p{
+        text-align: center;
+       color: white;
+       }
       body{
         background-image: url("https://seedname101.github.io/p30-1/background.jpg");
       background-repeat: repeat;
@@ -56,16 +60,18 @@
     </div>
   <div id = "container1">
   <p id="poem" onclick="myFunction()"><a class = "b1" href="https://seedname101.github.io/p30/">Click Here To Select Poetry Format(4/13/19)</a>
-  
   </p>
   </div>
 </div>
+ <p id = "para"></p>
   <script text = "javascript">
   document.getElementById("poem").addEventListener("click", myFunction);
 
 function myFunction() {
   document.getElementById("title").innerHTML = "Pantoum";
  document.getElementById("poem").innerHTML = "Poem Format For Saturday: Pantoum";
+document.getElementById("para").innerHTML="<span>A Pantoum is a poem that strongly influences repetition. Click <a href="https://www.youngwriters.co.uk/types-pantoum" target="_blank">here</a> to learn more about pantoums</span>"
+ 
 }
   </script>
   
