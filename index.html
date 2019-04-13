@@ -48,6 +48,7 @@
   cursor: pointer;
        }
        #para{
+        visibility: hidden;
        color:white;
         text-align: center;
        }
@@ -63,14 +64,14 @@
   </p>
   </div>
 </div>
- <span align="center" id = "para"></span>
+ <span align="center" id = "para">A Pantoum is a poem that strongly influences repetition. Click <a href = "https://www.youngwriters.co.uk/types-pantoum">here</a> to learn more about pantoums</span>
   <script text = "javascript">
   document.getElementById("poem").addEventListener("click", myFunction);
 function myFunction() {
   document.getElementById("title").innerHTML = "Pantoum";
  document.getElementById("b1").innerHTML = "Poem Format For Saturday: Pantoum";
  document.getElementById("poem").innerHTML = "Poem Format For Saturday: Pantoum";
- document.getElementById("para").innerHTML="A Pantoum is a poem that strongly influences repetition. Click here to learn more about pantoums";
+ document.getElementById("para").style.visibility = "visible"; 
 }
   </script>
   
