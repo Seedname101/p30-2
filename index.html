@@ -113,12 +113,18 @@
 </div>
   <script text = "javascript">
 function myFunction() {
+ var x1 = 0;
   document.getElementById("title").innerHTML = "Pantoum";
  document.getElementById("b1").innerHTML = "Poem Format For Wednesday: Pantoum";
  document.getElementById("poem").innerHTML = "Poem Format For Wednesday: Pantoum";
  document.getElementById("para").style.visibility = "visible"; 
  document.getElementById("para").style.textAlign = "center"; 
 document.title = 'Pantoum';
+ x += 1;
+ if(x > 5){
+  document.getElementById("b1").innerHTML = "Stop Clicking Me! This Will change tomorrow!";
+ document.getElementById("poem").innerHTML = "Stop Clicking Me! This Will change tomorrow!";
+ }
 }
   </script>
   
