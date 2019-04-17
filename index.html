@@ -3,6 +3,14 @@
 <html> 
  <head>
     <title>Poem Format Picker</title> 
+  <script>
+$(document).ready(function(){
+  $("#poem").click(function(){
+    $("#para").hide();
+    $("#para").slideDown();
+  });
+});
+</script>
       <style>
       body{
         background-image: url("https://seedname101.github.io/p30-1/background.jpg");
@@ -111,7 +119,7 @@
   <p>Made By Julian Dominguez</p>
   </span>
 </div>
-  <script text = "javascript">
+  <script type = "text/javascript">
 function myFunction() {
   document.getElementById("title").innerHTML = "Pantoum";
  document.getElementById("b1").innerHTML = "Poem Format For Wednesday: Pantoum";
