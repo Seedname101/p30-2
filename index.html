@@ -109,11 +109,11 @@ $(document).ready(function(){
     </div>
   <br>
   <div id = "container1">
-  <p id="poem" onclick="myFunction()"><span id = "b1">Click Here To Select Poetry Format(4/17/19)</span>
+  <p id="poem" onclick="myFunction()"><span id = "b1">Click Here To Select Poetry Format(4/18/19)</span>
   </p>
   </div>
 
- <p align="center" id = "para"><br>Pantoums focus greatly on repetition. Click <a class = "ll" href = "https://www.youngwriters.co.uk/types-pantoum" target="_blank">here</a> to learn more about pantoums. You can also use the image below as a reference.<br><br><a target="_blank" href = "pantoum.jpg"><img src = "https://seedname101.github.io/p30-2/pantoum.jpg" height="250px" width="375px"></a></p>
+  <p align="center" id = "para"><br><span class = "format"></span> are fairly simple. Click <a class = "ll" href = "https://www.poets.org/poetsorg/text/villanelle-poetic-form" target="_blank">here</a> to learn more about <span class = "format"></span>. You can also use the image below as a reference.<br><br><a target="_blank" href = "pantoum.jpg"><img src = "https://seedname101.github.io/p30-2/pantoum.jpg" height="250px" width="375px"></a></p>
     <div class="footer">
   <span class = "te">
   <p><a class = "ema" href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
@@ -122,12 +122,13 @@ $(document).ready(function(){
 </div>
   <script type = "text/javascript">
 function myFunction() {
-  document.getElementById("title").innerHTML = "Pantoum";
- document.getElementById("b1").innerHTML = "Poem Format For Wednesday: Pantoum";
- document.getElementById("poem").innerHTML = "Poem Format For Wednesday: Pantoum";
+ document.getElementsByClassName("format")[0].innerHTML = "Villanelle";
+  document.getElementById("title").innerHTML = "Villanelle";
+ document.getElementById("b1").innerHTML = "Poem Format For Thursday: Villanelle";
+ document.getElementById("poem").innerHTML = "Poem Format For Thursday: Villanelle";
  document.getElementById("para").style.visibility = "visible"; 
  document.getElementById("para").style.textAlign = "center"; 
-document.title = 'Pantoum';
+document.title = 'Villanelle';
 
 }
   </script>
