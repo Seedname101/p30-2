@@ -17,6 +17,7 @@ $(document).ready(function(){
         background-image: url("https://seedname101.github.io/p30-1/background.jpg");
       background-repeat: repeat;
       background-size: cover;
+       margin: 0;
     }
       #title{
       color: white;
@@ -99,27 +100,59 @@ $(document).ready(function(){
       color:black;
       font-weight: bold;
       }
-
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
     </style>
 </head>
  <body>
-  <h1 id = "title">Poetry Format Picker</h1>
-    <div id = "container">
-    <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
-    </div>
-  <br>
+
+  <ul>
+<li><a class="active" href="https://seedname101.github.io/p30">Home</a></li>
+  <li><a href="https://seedname101.github.io/p30-3">All Topics</a></li>
+  <li><a href="https://seedname101.github.io/p30-1">About</a></li>
+  <li><a href="https://seedname101.github.io/p30-2">Format Picker</a></li>
+  <li><a href="https://seedname101.github.io/p30-4">Format Generator</a></li>
+  <li><img src = "https://seedname101.github.io/p30/byline.png" width="300px" height="40px"></li>
+</ul>
+  <div style="padding:20px;margin-top:30px;">
+   <h1 id = "container">Poetry Format Picker</h1>
   <div id = "container1">
   <p id="poem" onclick="myFunction()"><span id = "b1">Click Here To Select Poetry Format(4/19/19)</span>
   </p>
   </div>
-
-  <p align="center" id = "para"><br>Haikus are short Japanese poems- Be creative with it! Click <a class = "ll" href = "https://www.youngwriters.co.uk/types-haiku-poem" target="_blank">here</a> to learn more about haikus. You can also use the image below as a reference.<br><br><a target="_blank" href = "haiku.jpg"><img src = "https://seedname101.github.io/p30-2/haiku.jpg" height="250px" width="375px"></a></p>
-    <div class="footer">
+<p align="center" id = "para"><br>Haikus are short Japanese poems- Be creative with it! Click <a class = "ll" href = "https://www.youngwriters.co.uk/types-haiku-poem" target="_blank">here</a> to learn more about haikus. You can also use the image below as a reference.<br><br><a target="_blank" href = "haiku.jpg"><img src = "https://seedname101.github.io/p30-2/haiku.jpg" height="250px" width="375px"></a></p>
+  </div>
+   <div class="footer">
   <span class = "te">
   <p><a class = "ema" href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
   <p>Made By Julian Dominguez</p>
   </span>
 </div>
+  
   <script type = "text/javascript">
 function myFunction() {
   document.getElementById("title").innerHTML = "Haiku";
